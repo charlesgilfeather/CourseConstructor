@@ -1,0 +1,60 @@
+   /* Remove the navbar's default margin-bottom and rounded borders */ 
+   .navbar {
+    border-radius: 0;   
+    background-color:#434545; 
+    color: white;
+    width: 100%;
+    min-height: 76px;
+  }
+
+  .navbar-text {
+      position: absolute;
+      top: 20px;
+      left: 40%;
+      font-size: 20px;
+
+      text-decoration-color: none;
+      text-align: center;
+  }
+  .uml_logo { 
+      position: absolute; 
+      top: 10px; 
+      left: 10px;
+      padding: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0px;
+      max-width: 100px;
+      min-width: 50px;
+      max-height: 120px;
+      min-height: 60px;
+      background-color: white;
+  }
+  .glyphicon.glyphicon-log-out {
+      padding-top: 30px;
+      margin: 0%;
+  }
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #434545;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
