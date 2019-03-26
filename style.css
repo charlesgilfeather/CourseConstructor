@@ -3,24 +3,27 @@
      font-family: 'Open Sans',sans-serif;
    }
    .navbar {
+    position: fixed;
     border-radius: 0;   
     background-color:#434545; 
     color: white;
     width: 100%;
     min-height: 82px;
+    z-index: +1;
   }
 
   .navbar-text {
-      position: absolute;
-      top: 20px;
+      position: fixed;
+      top: 30px;
       left: 40%;
       font-size: 25px;
-
+      margin-bottom: 10px;
       text-decoration-color: none;
       text-align: center;
+      z-index: +1;
   }
   .uml_logo { 
-      position: absolute; 
+      position: fixed; 
       top: 10px; 
       left: 10px;
       padding: 5px;
@@ -32,34 +35,42 @@
       max-height: 120px;
       min-height: 60px;
       background-color: white;
+      z-index: +1;
   }
   .glyphicon.glyphicon-log-out {
       margin: 20px;
       padding-top: 30px;
       margin: 0%;
+      z-index: +1;
   }
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
   .row.content {
-    height: 450px;
+    position: relative;
+    height: 475px;
+    margin-top: 120px; 
   }
   /* Set gray background color and 100% height */
-  .sidenav {
-    padding-top: 20px;
-    height: 100%;
-  }
   
+
   /* Set black background color, white text and some padding */
   footer {
+    position: fixed;
+    bottom: 0px;
     background-color: #434545;
     color: white;
+    margin-top: 20px;
     padding: 15px;
+    height: auto;
+    width: 100%;
+  }
+  
+  .sidenav {
+    border: dashed black 2px;
+    height: 100%;
+    padding: 30px;
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
-    .sidenav {
-      height: auto;
-      padding: 15px;
-    }
     .row.content {height:auto;} 
   }

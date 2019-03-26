@@ -3,39 +3,50 @@
     font-family: 'Open Sans',sans-serif;
   }
 
+  h3 {
+    margin: 0px;
+    font-size: 14pt;
+  }
+  h4 {
+    margin: 0px;
+  }
+  /*  see style.css
   .row.content {
     position: relative;
     height: 475px;
-    margin-top: 15px; 
+    margin-top: 100px; 
   }
+  */
   .student-name {
     position: relative;
     max-width: 700px;
   }
   .student-advisor {
-    /*background-color: lightblue;*/
     position: relative;
-    max-height: 10%;
+    max-height: 80%;
     max-width: 700px;
     border-radius: 6px;
-    border: solid #d3d3d3 2px;
-   
+    border: solid #d3d3d3 3px; 
+    padding: 0px;
+    margin-bottom: 15px;
   }
   .student {
     display: inline-flex;
     position: relative;
     background-color: lightgray;
-    height: 100px;
+    height: 80px;
     width: 325px;
     margin: 0px;
+    padding: 0px;
   }
   .advisor {
     display: inline-flex;
     position: relative;
     background-color: lightblue;
-    height: 100px;
+    height: 80px;
     width: 325px;
     margin: 0px;
+    padding: 0px;
   }
   /***************** COURSE HISTORY START ********************/
   .history_header {
@@ -47,14 +58,14 @@
     height: 30%;
     max-width: 700px;
     border-radius: 6px;
-    border: solid #d3d3d3 2px;
+    border: solid #d3d3d3 3px;
   }
   .update-history {
     display: inline-flex;
     position: relative;
     background-color: lightgray;
     height: 300px;
-    width: 300px;
+    width: 325px;
     margin: 0px;
   }
   .take-survey {
@@ -62,37 +73,11 @@
     position: relative;
     background-color: lightblue;
     height: 300px;
-    width: 300px;
+    width: 325px;
     margin: 0px;
   }
  /***************** COURSE HISTORY END ********************/
-  
-  
-  h3 {
-    margin: 0px;
-    font-size: 14pt;
-  }
-  h4 {
-    margin: 0px;
-  }
-  /* Set gray background color and 100% height */
+  /*
   .sidenav {
-
-    height: 100%;
-    border: dashed black 2px;
   }
-  
-  /* Set black background color, white text and some padding */
-  footer {
-    background-color: #434545;
-    color: white; 
-  }
-  
-  /* On small screens, set height to 'auto' for sidenav and grid */
-  @media screen and (max-width: 767px) {
-    .sidenav {
-      height: auto;
-      padding: 15px;
-    }
-    .row.content {height:auto;} 
-  }
+  */
