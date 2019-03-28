@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> --> 
   <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" type="text/css" href="dashboard_style.css">
+  <link rel="stylesheet" type="text/css" href="CourseHistory_style.css">
 </head> 
 <body> 
 <nav class="navbar navbar-inverse">
@@ -57,17 +57,20 @@
           <h3 class="text-left">John Smith</h3> 
         </div>
         <div class = "container-fluid student-advisor">    
-          <div class = "container-fluid student"> <!-- student container -->
+            
+          <div class = "container student"> <!-- student container -->    
             <div class = "container text-left">  
-                <p class = "major">Computer Science | General Path </p>  
+              <p class = "major">Computer Science | General Path </p>  
+              <a href="../dashboard/dashboard.html">Return to dashboard</a> 
             </div>
           </div>
-          <div class = "container-fluid advisor"> <!-- advisor container-->
-            <div class = "container text-left">
-              <p class = "advisor-name"> Advisor: Some Guy </p>
-              <p class = "advisor-email">Email: some_guy@uml.edu</p>
-            </div>
-          </div> 
+      
+            <div class = "container-fluid advisor"> <!-- advisor container-->
+              <div class = "container text-left">
+                  <p class = "advisor-name"> Advisor: Some Guy </p>
+                  <p class = "advisor-email">Email: some_guy@uml.edu</p>
+              </div>
+            </div> 
         </div>
         <!-- course history -->   
         <div class = "container-fluid history_header"> <!-- h3 in container to resolve alignment issues-->
@@ -75,26 +78,36 @@
         </div>
         <!-- course history countainer w/sub-containers -->
         <div class = "container-fluid course-history">
-          <div class = "container-fluid update-history"> <!-- update history container -->
-            <div class = "container text-center">
-              
-              <a href="/CourseHistory/CourseHistory.html">Submit</a>
+            <div class = "container-fluid search-courses"> <!-- update history container -->
+                <div class="container">
+                    <h4>Add courses to your history</h4>
+                        <p>Include your past and present courses:</p>  
+                        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                        <br>
+                        <ul class="list-group" id="myList">
+                          <li class="list-group-item">Calc. 1</li>
+                          <li class="list-group-item">Computing 1 </li>
+                          <li class="list-group-item">Computing 2 </li>
+                          <li class="list-group-item">Computing 3 </li>
+                          <li class="list-group-item">Life Science </li>
+                          <li class="list-group-item">Physics 1 </li>
+                          <li class="list-group-item">Logic Design </li>
+                        </ul>  
+                </div>
             </div>
-          </div>
-          <div class = "container-fluid take-survey"> <!-- take-survey container -->
-            <div class = "container-fluid text-center">
-              <p id = "see-schedule">
-                <a href="dashboard.html">See Schedule</a>
-                <br><br>
-              </p>
-              <p id= "survey-info">Take our survey to find out what electives you might like best. <br><br>
-                <a href="dashboard.html">Take Survey</a></p>
-            </div>
-          </div> 
+            <div class = "container-fluid confirm-courses"> <!-- take-survey container -->
+                <div class="container">
+                    <h4 class = selected-classes-header>Selected Classes</h4>
+                    <p>These classes will be added to your history:</p>
+                    <br>
+                    <p id= "submit-history">
+                        <br><br><br><br><br><br><br><br>
+                      <a href="CourseHistory.html">Submit</a></p>
+                </div>
+            </div> 
         </div>
     </div>
     <!-- center content container end-->
-    
     <div class="col-sm-2 sidenav">
       <!--white space on sides-->
     </div> 
@@ -105,6 +118,15 @@
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
-
+<script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myList li").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+</script>
 </body>
 </html>

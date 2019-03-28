@@ -1,6 +1,7 @@
    /* Remove the navbar's default margin-bottom and rounded borders */ 
    body { 
      font-family: 'Open Sans',sans-serif;
+     background-color: white;
    }
    .navbar {
     position: fixed;
@@ -65,7 +66,7 @@
   }
   
   .sidenav {
-    border: dashed black 2px;
+    border: solid lightblue 1px;
     height: 100%;
     padding: 30px;
   }

@@ -1,5 +1,4 @@
-   /* Remove the navbar's default margin-bottom and rounded borders */ 
-   body { 
+body { 
     font-family: 'Open Sans',sans-serif;
   }
 
@@ -17,17 +16,22 @@
     margin-top: 100px; 
   }
   */
+  hr {
+      color: unset;
+      color: black;
+  }
   .student-name {
     position: relative;
     max-width: 700px;
   }
   .student-advisor {
     position: relative;
-    max-height: 80%;
+    max-height: 5%;
     max-width: 700px;
     border-radius: 6px;
     border: solid #d3d3d3 3px; 
     padding: 0px;
+    padding-top: 0px; 
     margin-bottom: 15px;
   }
   .student {
@@ -64,35 +68,24 @@
     border-radius: 6px;
     border: solid #d3d3d3 3px;
   }
-  .update-history {
+  p.search-courses {
+      font-style: italic;
+  }
+  .search-courses {
     display: inline-flex;
     position: relative;
     border: solid lightblue 1px;
     height: 300px;
-    width: 325px;
-    margin: 0px;
-  }
-  .take-survey {
-    display: inline-flex;
-    position: relative;
-    border: solid lightblue 1px;
-    height: 300px;
-    width: 325px;
-    margin: 0px;
-  }
-  #see-schedule {
-    font-size: 14pt;
-  }
-  #survey-info {
-    background-color: #d3d3d3;
+    width: 330px;
     padding: 10px;
-    border-radius: 6px;
-    border: solid #d3d3d3 3px;
-    font-size: 12pt;
+    overflow: hidden;
   }
-  
- /***************** COURSE HISTORY END ********************/
-  /*
-  .sidenav {
+  .confirm-courses {
+    display: inline-flex;
+    position: relative;
+    border: solid lightblue 1px;
+    height: 300px;
+    width: 330px;
+    padding: 10px;
+    margin: 0px;
   }
-  */
