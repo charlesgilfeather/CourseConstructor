@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> --> 
   <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" type="text/css" href="dashboard_style.css">
+  <link rel="stylesheet" type="text/css" href="sign_in_style.css">
 </head> 
 <body> 
 <nav class="navbar navbar-inverse">
@@ -38,9 +38,7 @@
         <li><a href="#">Contact</a></li> -->
       </ul>
       <!-- log out -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../sign_in/sign_in.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-      </ul>
+     
     </div>
   </div>
 </nav>
@@ -52,47 +50,20 @@
      
     <!-- center content container -->
       <div class ="col-sm-8 container-fluid">
-        <!-- student/advisor container -->      
-        <div class = "container-fluid student-name"> <!-- h3 in container to resolve alignment issues-->  
-          <h3 class="text-left">John Smith</h3> 
+          <!-- sign in form with styles taken from https://codepen.io/ace-subido/pen/Cuiep -->
+        <div class="wrapper">
+            <form form action="../dashboard/dashboard.html" method="GET" class="form-signin">       
+                <h2 class="form-signin-heading">Please login</h2>
+                <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                </label>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>  
+               <!-- <input type="hidden" name="redirect" value="dashboard/dashboard.html"> -->
+            </form>
         </div>
-        <div class = "container-fluid student-advisor">    
-          <div class = "container-fluid student"> <!-- student container -->
-            <div class = "container text-left">  
-                <p class = "major">Computer Science | General Path </p>  
-            </div>
-          </div>
-          <div class = "container-fluid advisor"> <!-- advisor container-->
-            <div class = "container text-left">
-              <p class = "advisor-name"> Advisor: Some Guy </p>
-              <p class = "advisor-email">Email: some_guy@uml.edu</p>
-            </div>
-          </div> 
-        </div>
-        <!-- course history -->   
-        <div class = "container-fluid history_header"> <!-- h3 in container to resolve alignment issues-->
-          <h3 class="text-left">Course History</h3> 
-        </div>
-        <!-- course history countainer w/sub-containers -->
-        <div class = "container-fluid course-history">
-          <div class = "container-fluid update-history"> <!-- update history container -->
-            <div class = "container text-center">
-              
-              <a href="/CourseHistory/CourseHistory.html">Submit</a>
-            </div>
-          </div>
-          <div class = "container-fluid take-survey"> <!-- take-survey container -->
-            <div class = "container-fluid text-center">
-              <p id = "see-schedule">
-                <a href="dashboard.html">See Schedule</a>
-                <br><br>
-              </p>
-              <p id= "survey-info">Take our survey to find out what electives you might like best. <br><br>
-                <a href="dashboard.html">Take Survey</a></p>
-            </div>
-          </div> 
-        </div>
-    </div>
+      </div>
     <!-- center content container end-->
     
     <div class="col-sm-2 sidenav">
