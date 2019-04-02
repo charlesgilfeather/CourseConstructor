@@ -1,3 +1,9 @@
+-- Populate persons table
+insert into PERSON (ssn, fname, minit, lname, sex, dob, street, zipcode, phone) values ('961705899', 'Fred', 'R', 'Castillo', 'M', '13-JAN-45', '1558 Mandrake Hill', '33430', '7505900484');
+
+  -- Populate Students table
+insert into STUDENT (ssn, student_no, degree_prog, minor_dept, major_dept, class) values ('477685256', 'N219730702', 'BSC', null, 1, 'freshman');
+
 -- Populate Courses table
 insert into COURSE (cno, cname, credits, dno) values ('COMP1000', 'Media Computing', 3, 1);
 insert into COURSE (cno, cname, credits, dno) values ('COMP1005', 'An Introduction to Programming for Data Science', 3, 1);
