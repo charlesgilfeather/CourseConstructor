@@ -1,8 +1,25 @@
+<<<<<<< HEAD
  /* Remove the navbar's default margin-bottom and rounded borders */ 
    body { 
     font-family: 'Open Sans',sans-serif;
     /*background-color: #0469B1;*/
   } 
+=======
+   /* Remove the navbar's default margin-bottom and rounded borders */
+   body {
+     font-family: 'Open Sans',sans-serif;
+     background-color: white;
+   }
+   .navbar {
+    position: fixed;
+    border-radius: 0;
+    background-color:#434545;
+    color: white;
+    width: 100%;
+    min-height: 82px;
+    z-index: +1;
+  }
+>>>>>>> fd732fa4da4563dec6e084d3784a70e45c7cef8f
 
   .jumbotron {
     font-size: unset;
@@ -10,10 +27,27 @@
     padding-bottom: 5px;
     border-radius: 3px;
   }
+<<<<<<< HEAD
 
   .jumbotron h1 {
     font-size: 4rem;
     margin-top: 90px;
+=======
+  .uml_logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0px;
+      max-width: 100px;
+      min-width: 50px;
+      max-height: 120px;
+      min-height: 60px;
+      background-color: white;
+      z-index: +1;
+>>>>>>> fd732fa4da4563dec6e084d3784a70e45c7cef8f
   }
 
   .jumbotron p {
@@ -24,6 +58,7 @@
   .student {
     display: flex;
     position: relative;
+<<<<<<< HEAD
     margin: auto;
     margin-top: 120px;
     margin-bottom: 40px;
@@ -85,3 +120,34 @@
 }
 
   
+=======
+    height: 475px;
+    margin-top: 120px;
+    text-align: center;
+  }
+  /* Set gray background color and 100% height */
+
+
+  /* Set black background color, white text and some padding */
+  footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #434545;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    height: auto;
+    width: 100%;
+  }
+
+  .sidenav {
+    border: solid lightblue 1px;
+    height: 100%;
+    padding: 30px;
+  }
+
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .row.content {height:auto;}
+  }
+>>>>>>> fd732fa4da4563dec6e084d3784a70e45c7cef8f
