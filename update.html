@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Course Constructor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> --> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/update.css">
+</head> 
+<body> 
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">     
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- UML logo-->
+                <div class="uml_logo">
+                    <a href="https://www.uml.edu/"><img class="img-responsive" src="images/uml_logo.svg"></a>
+                </div>
+                <!-- Course Cunstroctor-->
+                <h2 class = "navbar-text" style = "color: white"> Course Constructor </h2>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="myPath.html">My Path</a></li>
+                    <li><a href="mySchedule.html">My Schedule</a></li>
+                    <li><a href="myElectives.html">My Electives</a></li>
+                    <li><a href="signIn.html">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class = "row">
+        <div class= "container"> 
+            <div class = "jumbotron"> 
+                <h1> stuff about my update </h1>
+            </div>
+        </div>
+    </div>
+    <div class= "container">
+        <div class = "row">
+            <div class = "container col-sm-6">
+                <div class = "class-search">
+                    <input type="search" id="search" value="" class="form-control" placeholder="Search using Fuzzy searching">
+                    <table class="table" id="table">
+                            <thead>
+                                <tr>
+                                    <th>First column</th>
+                                    <th>Second column</th>
+                                    <th>Third column</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Introducing</td>
+                                    <td>jQuery</td>
+                                    <td>Searchable</td>
+                                </tr>
+                                <tr>
+                                    <td>Lorem</td>
+                                    <td>Ipsum</td>
+                                    <td>Dolor</td>
+                                </tr>
+                                <tr>
+                                    <td>Some</td>
+                                    <td>More</td>
+                                    <td>Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+            <div class = "container col-sm-6">
+                <div class = "class-selected">
+
+                </div>
+            </div>
+        </div>
+    </div>    
+   
+    <footer class="container-fluid text-center">
+       <p>&copy; 2019: Charles Gilfeather, Andrea Panaro, Oscar De La Rosa</p>
+    </footer>
+    <script>
+        $(function () {
+            $( '#table' ).searchable({
+            striped: true,
+            oddRow: { 'background-color': '#f5f5f5' },
+            evenRow: { 'background-color': '#fff' },
+            searchType: 'fuzzy'
+        });
+    
+        $( '#searchable-container' ).searchable({
+            searchField: '#container-search',
+            selector: '.table',
+            childSelector: '.col-xs-4',
+            show: function( elem ) {
+            elem.slideDown(100);
+        },
+        hide: function( elem ) {
+            elem.slideUp( 100 );
+        }
+    })
+});
+    </script>
+
+</body>
+</html>

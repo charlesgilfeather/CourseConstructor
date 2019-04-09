@@ -1,78 +1,87 @@
-   /* Remove the navbar's default margin-bottom and rounded borders */ 
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
    body { 
-     font-family: 'Open Sans',sans-serif;
-     background-color: white;
-   }
-   .navbar {
-    position: fixed;
-    border-radius: 0;   
-    background-color:#434545; 
-    color: white;
-    width: 100%;
-    min-height: 82px;
-    z-index: +1;
+    font-family: 'Open Sans',sans-serif;
+    /*background-color: #0469B1;*/
+  } 
+
+  .jumbotron {
+    font-size: unset;
+    background-color: #d3d3d3;
+    padding-bottom: 5px;
+    border-radius: 3px;
   }
 
-  .navbar-text {
-      position: fixed;
-      top: 30px;
-      left: 40%;
-      font-size: 25px;
-      margin-bottom: 10px;
-      text-decoration-color: none;
-      text-align: center;
-      z-index: +1;
+  .jumbotron h1 {
+    font-size: 4rem;
+    margin-top: 90px;
   }
-  .uml_logo { 
-      position: fixed; 
-      top: 10px; 
-      left: 10px;
-      padding: 5px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin: 0px;
-      max-width: 100px;
-      min-width: 50px;
-      max-height: 120px;
-      min-height: 60px;
-      background-color: white;
-      z-index: +1;
+
+  .jumbotron p {
+    font-size: 2rem;
   }
-  .glyphicon.glyphicon-log-out {
-      margin: 20px;
-      padding-top: 30px;
-      margin: 0%;
-      z-index: +1;
-  }
-  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {
+  
+  /*
+  .student {
+    display: flex;
     position: relative;
-    height: 475px;
-    margin-top: 120px; 
-    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding: 10px;
+    opacity: .7;
+    border-radius: 5px;
+    min-width: 400px;
+    max-height: 125px;
   }
-  /* Set gray background color and 100% height */
+  .MT {
+    padding: 20px;
+    border-bottom: #434545;
+  }
   
+  .student img {
+    padding-left: 0px;
+    padding-right: 15px;
+    max-width: 100px;
+  }
+  .student-info {
+    min-width: 200px;
+    max-height: 75px;
+    padding-left: 10px;
+    font-size: 200%;
+  }
+*/
+#options {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-group {
+  margin-bottom: 40px;
+}
+.card {
+  max-width: 250px;
+  margin: auto;
+  border: unset;
+  border: solid #d3d3d3 2px;
+  border-radius: 3px;
+  
+  background-color: white;
+  padding: 0px;
+  margin-top: 10px;
+}
+.card-title  { 
+  color:  #434545;
+  margin: 0px;
+  padding: 10px;
+  font-weight: bolder;
+  z-index: -1;
+}
 
-  /* Set black background color, white text and some padding */
-  footer {
-    position: fixed;
-    bottom: 0px;
-    background-color: #434545;
-    color: white;
-    margin-top: 20px;
-    padding: 15px;
-    height: auto;
-    width: 100%;
-  }
+.btn {
+  background-color:  #0469B1;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
   
-  .sidenav {
-    border: solid lightblue 1px;
-    height: 100%;
-    padding: 30px;
-  }
-  
-  /* On small screens, set height to 'auto' for sidenav and grid */
-  @media screen and (max-width: 767px) {
-    .row.content {height:auto;} 
-  }
