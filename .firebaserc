@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "courseconstructor",
+    "singleTest": "courseconstructor"
+  }
+}
