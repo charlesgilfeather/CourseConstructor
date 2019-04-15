@@ -1,10 +1,10 @@
 body { 
   font-family: 'Open Sans',sans-serif;
   background-color: white;
- 
+
 }
 a {
-  border: unset;
+    border: unset;
 }
 .current a {
   border: solid #0469B1;
