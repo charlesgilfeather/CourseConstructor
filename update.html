@@ -9,6 +9,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/css/bootstrap-select.css">
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/js/bootstrap-select.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.9/css/bootstrap-select.css.map"></script>
         <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/update.css">
@@ -51,71 +56,45 @@
         <div class="container">
             <div class="row">
                 <div class="container col-sm-6">
-                    <div class="class-search">
-                        <input type="search" id="search" value="" class="form-control"
-                            placeholder="Search using Fuzzy searching">
-                        <table class="table" id="table">
-                            <thead>
-                                <tr>
-                                    <th>First column</th>
-                                    <th>Second column</th>
-                                    <th>Third column</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Introducing</td>
-                                    <td>jQuery</td>
-                                    <td>Searchable</td>
-                                </tr>
-                                <tr>
-                                    <td>Lorem</td>
-                                    <td>Ipsum</td>
-                                    <td>Dolor</td>
-                                </tr>
-                                <tr>
-                                    <td>Some</td>
-                                    <td>More</td>
-                                    <td>Data</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="container col-sm-6">
-                        <div class="class-selected">
-                            <p>selected class list</p>
-                        </div>
-                    </div>
+                    <!-- Search select form from https://developer.snapappointments.com/bootstrap-select/ -->
+                    <form class="form">
+                        <select class="selectpicker" multiple data-actions-box="true" data-live-search="true"
+                            data-width="fit" title="Search for your classes" data-role="tagsinput">
+                            <option>comp.1234 first class</option>
+                            <option>comp.1234 second class</option>
+                            <option>Math.1234 third class</option>
+                            <option>math.1234 fourth class</option>
+                            <option>Comp.2222 fifth class</option>
+                        </select>
+                    </form>
+
+                    <!--       
+               
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+            -->
                 </div>
             </div>
         </div>
-
         <footer class="container-fluid text-center">
             <p>&copy; 2019: Charles Gilfeather, Andrea Panaro, Oscar De La Rosa</p>
         </footer>
         <script>
-            $(function () {
-                $('#table').searchable({
-                    striped: true,
-                    oddRow: { 'background-color': '#f5f5f5' },
-                    evenRow: { 'background-color': '#fff' },
-                    searchType: 'fuzzy'
-                });
+            $("select").val();
+            ("select").tagsinput('option');
 
-                $('#searchable-container').searchable({
-                    searchField: '#container-search',
-                    selector: '.table',
-                    childSelector: '.col-xs-4',
-                    show: function (elem) {
-                        elem.slideDown(100);
-                    },
-                    hide: function (elem) {
-                        elem.slideUp(100);
-                    }
-                })
-            });
         </script>
-
     </body>
 
 </html>

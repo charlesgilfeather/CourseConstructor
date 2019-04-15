@@ -9,6 +9,7 @@ a {
 .current a {
   border: solid #0469B1;
 }
+
 .navbar {
   position: fixed;
   top: 0px;
