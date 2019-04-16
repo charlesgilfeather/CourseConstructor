@@ -9,3 +9,11 @@ form .title {
 .class-selected {
     border: solid #d3d3d3 2px;
 }
+h2 {
+    margin-top: 90px;
+}
+.jumbotron {
+    background-color: #d3d3d3;
+    padding-bottom: 5px;
+    border-radius: 3px;
+  }
